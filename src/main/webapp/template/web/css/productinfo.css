@@ -1,0 +1,123 @@
+.table-product-info{
+    border: 1px solid #ff9300;
+    padding: 30px;
+    border-radius: 20px;
+}
+.table-product-info a{
+    text-decoration: none;
+    color: black;
+}
+.specifications {
+    border-collapse: collapse; /* Hợp nhất các đường viền của ô */
+    width: 100%; /* Chiều rộng của bảng */
+    min-width: 900px;
+}
+
+.specifications th,
+.specifications td {
+    padding: 8px; /* Khoảng cách bên trong của ô */
+    border: 1px solid lightgray; /* Đường viền của ô */
+    text-align: left; /* Căn lề văn bản trong ô */
+}
+
+.specifications th {
+    background-color: rgb(231, 87, 87); /* Màu nền của các thẻ th */
+}
+
+.specifications tr:nth-child(even) {
+    background-color: #facaca; /* Màu nền của hàng chẵn */
+}
+
+
+/* ------------------------thu gon menu---------------------- */
+.myheader {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5); /* Màu nền với độ mờ */
+    transition: all 0.3s ease; /* Hiệu ứng động */
+    border-bottom: 1px solid red;
+}
+
+.myheader.sticky {
+    background-color: rgb(255, 255, 255); /* Màu nền không mờ */
+}
+
+.col-md-5.main-product-mid {
+    width: 490px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.main-product-left {
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+#config-holder ul {
+    display: inline-block;
+    width: calc(100% - 90px) !important;
+    margin-bottom: 0;
+}
+#config-holder li.selected-attr-value {
+    border-color: #ff9300 !important;
+    border-width: 1px !important;
+}
+
+#config-holder li {
+    margin-bottom: 5px;
+    float: left;
+    margin-right: 5px;
+    border: solid 1px #aaa;
+    padding: 7px 10px;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #333;
+    border-radius: 8px;
+}
+
+#config-holder{
+    margin: 10px 0;
+}
+#attr-cpu {
+    margin-bottom: 10px;
+}
+li.selected-attr-value::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 0 solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #ff9300;
+}
+li.selected-attr-value::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: Font Awesome\ 5 Free;
+    right: 2px;
+    bottom: 2px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 8px;
+}
+
+.main-product-left img{
+    width: 100%;
+    display:block;
+    transition: all .3s ease;
+}
+.main-product-left img:hover{
+    transform: scale(1.3); /* cỡ zoom khi di chuột vào */
+}
+.main-product-left div{
+    display:block;
+    overflow: hidden;
+}
